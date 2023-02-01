@@ -6,7 +6,7 @@ This repository contains the source code for a game called "Alien vs Zombie". It
 ![Screenshot (10)](https://user-images.githubusercontent.com/123444889/216056553-57d70235-ee2d-4cda-a871-7b4760d6e081.png)
 
 
-Please provide the YouTube link to your [Video Demo](https://youtube.com).
+[Video Demo](https://youtube.com).https://youtu.be/nUqmK7F0my0
 
 
 ## Compilation Instructions
