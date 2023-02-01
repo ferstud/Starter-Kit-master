@@ -33,5 +33,5 @@ Please replace the following with your group members' names.
 
 - FARAH NAJIHAH BINTI ROSLAN
 - NUR HANNANI ATHIRAH BINTI ROSLI
-- NUR ILHAM DAMIA
+- NUR ILHAM DAMIA BINTI TUAH
 
