@@ -47,3 +47,9 @@ Please replace the following with your group members' names.
 - NUR HANNANI ATHIRAH BINTI ROSLI
 - NUR ILHAM DAMIA BINTI TUAH
 
+# Output (Screenshot)
+
+
+![Screenshot (10)](https://user-images.githubusercontent.com/123444889/216055684-5a79dd38-f74b-42a5-b4b3-24a48a2c127d.png)
+
+
