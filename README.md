@@ -31,7 +31,7 @@ Please DO NOT change the Progress Log below. Leave it as it is.
 
 Please replace the following with your group members' names. 
 
-- farah 
-- athirah
-- ilham
+- FARAH NAJIHAH BINTI ROSLAN
+- NUR HANNANI ATHIRAH BINTI ROSLI
+- NUR ILHAM DAMIA
 
