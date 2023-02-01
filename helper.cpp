@@ -332,11 +332,11 @@ namespace pf
 
     void ShowGameBoard(){
 
-        std::cout << "\t .: Alien vs Zombie :.\n\n";
+        std:cout << "t .: Alien vs Zombie :.\n\n";
 
-        std::cout << std::setw(5) << std::right;
+        std:cout << std::setw (5) << std::right;
 
-        int prefix=1, f_cols=1, no_cols=9, no_col=9;
+        int prefix=1, f_cols=1, no_cols=9, no col=9;
 
         for(int i=1;i<=9 && f_cols<=kColumns;i++,f_cols++){ //displaying first 9 column numbers
             std::cout << i << " ";
