@@ -1,7 +1,7 @@
 // *********************************************************
 // demo.cpp
 //
-// This program is intended to demonstrate helper functions 
+// This program is intended to demonstrate helper functions
 //   and/or classes in the "pf" folder.
 //
 // This program will be updated if more helper functions
@@ -9,7 +9,7 @@
 //
 // Do not modify/use this program to do your assignment.
 //   Instead, use "main.cpp".
-// 
+//
 // To compile this program, type the following in the terminal
 //
 // For CMD or PowerShell (in Windows)
@@ -54,7 +54,7 @@ void DemoCreateGameBoard()
 int main()
 {
     cout << "===== Begin Demo =====" << endl;
-    
+
     // DemoPause();
     // DemoClearScreen();
     DemoCreateGameBoard();
