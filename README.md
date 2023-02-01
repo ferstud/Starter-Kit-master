@@ -1,26 +1,38 @@
 # Alien vs. Zombie
 
-Please introduce the game here.
+This repository contains the source code for a game called "Alien vs Zombie". It's a 2D shooter game where players control an alien who must defend against attacking zombies.
 
 You may add one signature screenshot of your program here or above the title. Check out [this tutorial](https://www.digitalocean.com/community/tutorials/markdown-markdown-images) to learn how to do it.
 
 Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
+
 ## Compilation Instructions
 
-Provide instructions on how to compile your program, especially when it is non-trivial.
+To compile the program, you will need to have the following software installed on your computer:
+•	A C++ compiler (such as GCC or Visual C++)
+•	SFML library for graphics and audio
 
-For example:
+1. Clone the repository to your local machine using the following command:
+git clone https://github.com/ferstud/Starter-Kit-master.git
+2. Navigate to the cloned repository using the terminal or command prompt.
+3. Compile the source code by running the following command:
+g++ main.cpp -o alien_vs_zombie -lsfml-graphics -lsfml-window -lsfml-system
+4. Run the game by executing the generated binary file:
+./alien_vs_zombie./alien_vs_zombie
 
-```
-g++ main.cpp folder1\code.cpp folder2\code.cpp ......
-```
+
 
 ## User Manual
 
-Please provide the user manual on how to use your program.
+Launch the game by running the binary file "alien_vs_zombie"
+Use the arrow keys to move the alien around the screen.
+Use the space bar to shoot at the incoming zombies.
+Collect power-ups to gain temporary abilities, such as increased fire rate or invincibility.
+The goal of the game is to survive as long as possible and score as many points as you can.
+The game is over when the alien's health reaches zero.
+The game will automatically restart after the end of each round.
 
-Please DO NOT change the Progress Log below. Leave it as it is.
 
 ## Progress Log
 
