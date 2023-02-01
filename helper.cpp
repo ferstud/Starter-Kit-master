@@ -107,8 +107,8 @@ namespace pf
                 a=a[i]+32;
         }
     }
-
-    void ChangeArrow()
+    
+       void ChangeArrow()
     {
         int r_no, c_no;
         std::string direction;
@@ -190,7 +190,6 @@ namespace pf
         }
         return 'N';
     }
-
 
     void SetRandomObject(int i, int j)
     {
