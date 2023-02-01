@@ -2,7 +2,9 @@
 
 This repository contains the source code for a game called "Alien vs Zombie". It's a 2D shooter game where players control an alien who must defend against attacking zombies.
 
-You may add one signature screenshot of your program here or above the title. Check out [this tutorial](https://www.digitalocean.com/community/tutorials/markdown-markdown-images) to learn how to do it.
+# Output (Screenshot)
+![Screenshot (10)](https://user-images.githubusercontent.com/123444889/216056553-57d70235-ee2d-4cda-a871-7b4760d6e081.png)
+
 
 Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
@@ -47,9 +49,8 @@ Please replace the following with your group members' names.
 - NUR HANNANI ATHIRAH BINTI ROSLI
 - NUR ILHAM DAMIA BINTI TUAH
 
-# Output (Screenshot)
 
 
-![Screenshot (10)](https://user-images.githubusercontent.com/123444889/216055684-5a79dd38-f74b-42a5-b4b3-24a48a2c127d.png)
+
 
 
