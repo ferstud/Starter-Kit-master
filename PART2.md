@@ -17,7 +17,7 @@ List all the features completed.
 5. Alien turn
 6. Damage Zombies
 7. Discovering pod
-8. discovering health
+8. Discovering health
 
 
 ## Additional Features
