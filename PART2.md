@@ -59,29 +59,34 @@ For example:
 
 ## Problems Encountered & Solutions
 
-1. Columns Numbering Problem:
+1. 
+Columns Numbering Problem:
 It was ok with single-digit numbers but turned into a big problem for column numbers greater than 9
 
 Solution:
 Printed each digit of the number separately using a loop
 
-2. Set Random Objects Problem:
+2. 
+Set Random Objects Problem:
 Random values created a rare chance for health and pod to appear for the Alien
 
 Solution:
 Set 2 values for health as well as for pod so that the probability for coming these could be doubled
 
-3. Generating random Zombies at locations where already a zombie is present
+3. 
+Generating random Zombies at locations where already a zombie is present
 
 Solution:
 Check whenever created a zombie, that if it is a valid position to place a zombie. Loop until we find a valid position
 
-4. Input handling: It was difficult to ensure the correct input from the user
+4. 
+Input handling: It was difficult to ensure the correct input from the user
 
 Solution:
 Applied checks everywhere in the program where we have to take input from the user allowing a user to input gain and notifying the user about the wrong input 
 
-5. Alien Turn Problem:
+5. 
+Alien Turn Problem:
 Faced difficulty in moving Alien along different directions based on arrows
 
 Solution:
