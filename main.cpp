@@ -11,9 +11,11 @@
 // ********************************************************* 
 
 
-#include "helper.cpp"
+#include "helper.h"
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -23,10 +25,11 @@ int main()
 {
     char isPlay = true, choice;
     string input;
+    int over;
+    srand(time(0));
 
-    cout << "Assignment (Part 1)" << endl;
+    cout << "\nAssignment (Part 2)" << endl;
     cout << "Let's Get Started!" << endl << endl;
-
 
     do{
         pf::PrintGameSettings();
@@ -45,26 +48,38 @@ int main()
         pf::CreateGameBoard();
 
         cin.ignore();
-        while( !pf::GameOver() )
+
+        over = 0;
+        while( !over )
         {
+            over = pf::GameOver();
+            if(over == 1){
+                std::cout << "\n\n" << "Congratulations!! Alien Wins.\n\n";
+                pf::Pause();
+                break;
+            } else if(over == 2){
+                std::cout << "\n\n" << "Alien Lost!!.\n\n";
+                pf::Pause();
+                break;
+            }
             pf::ClearScreen();
             pf::ShowGameBoard();
-            cout << "Command> ";
+            pf::Turn(0);
+            cout << "\nCommand> ";
             getline(cin, input, '\n');
             Caps_to_small(input);
 
-            // will move alien later
             if(input=="up") {
-                cout << "Alien Move\n";
+                pf::AlienMove(input);
             }
             else if(input=="down") {
-                cout << "Alien Move\n";
+                pf::AlienMove(input);
             }
             else if(input=="left") {
-                cout << "Alien Move\n";
+                pf::AlienMove(input);
             }
             else if(input=="right") {
-                cout << "Alien Move\n";
+                pf::AlienMove(input);
             }
             else if(input=="arrow") {
                 pf::ChangeArrow();
@@ -73,10 +88,10 @@ int main()
                 pf::Help();
             }
             else if(input=="save") {
-                cout << "saving\n";
+                pf::SaveGame();
             }
             else if(input=="load") {
-                cout << "loading\n";
+                pf::LoadGame();
             }
             else if(input=="quit") {
                 cout << "\nAre you sure? (y/n) : ";
@@ -109,8 +124,6 @@ int main()
             isPlay = false;
 
     }while( isPlay );
-
-    pf::Pause();
     return 0;
 }
 
@@ -120,3 +133,30 @@ void Caps_to_small(string &a){
             a=a[i]+32;
     }
 }
+
+
+
+
+
+
+
+/*
+ for(int r=0;r<pf::kRows;r++){
+    for(int c=0;c<pf::kColumns;c++){
+        if(pf::board[r][c].is_zombie){
+            for(int i=0;i<pf::zombie_count;i++){
+                if(pf::zombies[i].row_no == r && pf::zombies[i].col_no == c) {
+                    cout << pf::zombies[i].row_no << " " << pf::zombies[i].col_no;
+                    std::cout << "Alien hits Zombie\n";
+                    std::cout << "Zombie " << i + 1 << "got a damage of " << pf::alien.attack << std::endl;
+                    pf::zombies[i].life = pf::zombies[i].life-pf::alien.attack;
+                }
+            }
+        }
+    }
+
+
+    for(int i=0;i<pf::zombie_count;i++){
+    cout << pf::zombies[i].row_no << " col " << pf::zombies[i].col_no;
+}
+}*/
