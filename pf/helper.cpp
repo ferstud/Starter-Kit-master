@@ -134,8 +134,8 @@ namespace pf {
                 a = a[i] + 32;
         }
     }
-
-    void ChangeArrow() {
+    
+        void ChangeArrow() {
         int r_no, c_no;
         std::string direction;
         do {
@@ -384,8 +384,8 @@ namespace pf {
 
         std::cout << "\n\n";
     }
-
-    int GetClosestZombie(int r, int c) {
+    
+        int GetClosestZombie(int r, int c) {
         int i, minDistance = 99, minDisIndex, distance;
         for (i = 0; i < zombie_count; i++) {
             distance = std::min(abs(zombies[i].row_no - r), abs(zombies[i].col_no - c));
@@ -708,7 +708,7 @@ namespace pf {
             Turn(0);
         }
     }
-
+    
     void SaveGame()
     {
         std::string filename;
