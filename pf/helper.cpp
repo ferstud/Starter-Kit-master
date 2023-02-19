@@ -106,9 +106,7 @@ namespace pf {
     Character alien;
     Character *zombies = NULL;
 
-    int GameOver() {
-        if (alien.life <= 0)   // alien dead
-            return 2;
+    
 
         for (int i = 0; i < zombie_count; i++)
             if (zombies[i].life > 0)      // zombie is still alive
