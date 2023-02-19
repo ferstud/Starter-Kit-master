@@ -580,11 +580,11 @@ namespace pf {
             std::cout << "\nAlien finds an arrow\n";
     }
 
-    void AlienTurnEnd{
-        Pause;
-        ClearScreen;
-        ResetTrail;
-        ShowGameBoard;
+    void AlienTurnEnd() {
+        Pause();
+        ClearScreen();
+        ResetTrail();
+        ShowGameBoard();
         Turn(0);
         alien.attack = 0;
         board[alien.row_no][alien.col_no].is_alien = true;
