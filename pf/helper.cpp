@@ -117,7 +117,16 @@ namespace pf {
         return 1;        // all zombies are dead
     }
     
-   
+    void DeleteGameBoard() {
+        int i;
+        if (board != NULL) {
+            for (i = 0; i < kRows; i++)
+                delete[] board[i];
+            delete[] board;
+        }
+        if (zombie != NULL)
+            delete[] zombies;
+    }
     
     void Caps_to_small(std::string &a) {
         for (int i = 0; i < a.size(); i++) {
