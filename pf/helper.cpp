@@ -128,12 +128,7 @@ namespace pf {
             delete[] zombies;
     }
     
-    void Caps_to_small(std::string &a) {
-        for (int i = 0; i < a.size(); i++) {
-            if (a[i] >= 65 && a[i] <= 90)
-                a = a[i] + 32;
-        }
-    }
+    
    
         void ChangeArrow() {
         int r_no, c_no;
