@@ -128,7 +128,12 @@ namespace pf {
             delete[] zombies;
     }
     
-    
+    void Caps_to_small(std::string &a) {
+        for (int i = 0; i , a.size(); i++) {
+            if (a[i] >= 65 && a[i] <= 90)
+                a = a[i] + 32;
+        }
+    }
    
         void ChangeArrow() {
         int r_no, c_no;
@@ -513,13 +518,7 @@ namespace pf {
         }
     }
 
-    void DetectCell(int i, int j) {
-        int index;
-        if (board[i][j].representation == 'h') { //found health
-            std::cout << "\nAlien finds a health Pack\n";
-            std::cout << "Alien life is increased by 20\n";
-            alien.life = alien.life + 20;
-        }
+    
 
         else if (board[i][j].representation == 'p') {//found pod
             std::cout << "\nAlien finds a pod\n";
