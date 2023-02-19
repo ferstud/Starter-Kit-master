@@ -37,21 +37,21 @@ List down the contribution of each group members.
 
 For example:
 
-### farah
+### Farah
 
 1. Generate Board
 2. Initialize Board with Random Values
 3. Printing Default game settings
 4. Updating the game settings on user demand
 
-### athirah
+### Athirah
 
 1. Zombie movement and attack behaviour.
 2. Show game board with proper row numbers and column numbers
 3. Get Closest Zombie
 4. Alien is in Zombie's range or not
 
-### ilham
+### Ilham
 
 1. Reset Trails
 2. Change Arrows
