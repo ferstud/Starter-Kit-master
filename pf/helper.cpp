@@ -518,18 +518,24 @@ namespace pf {
         }
     }
 
-    
+    void DetectCell(int i, int j) {
+        int index;
+        if (board[i][j].representation == 'h') { //found health
+            std::cout << "\nAlien finds a health Pack\n";
+            std::cout << "Alien life is increased by 20\n";
+            alien.life = alien.life + 20;
+        }
 
         else if (board[i][j].representation == 'p') {//found pod
             std::cout << "\nAlien finds a pod\n";
             index = GetClosestZombie(i,j);
-            zombies[index-1].life = zombies[index-1].life - board[i][j].pod;
+            zombies[index-].life = zombies[index-1].life - board[i][j].pod;
             std::cout << "\nZombie " << index << " health reduced by " <<  board[i][j].pod << "\n";
-            if(zombies[index-1].life <=0 ){
+            if(zombies[index-].life <=0 ){
                 std::cout << "\nZombie " << index<< " died\n";
-                zombies[index-1].row_no = -1;
-                zombies[index-1].col_no = -1;
-                zombies[index-1].life = 0;
+                zombies[index-].row_no = -1;
+                zombies[index-].col_no = -1;
+                zombies[index-].life = 0;
             }
         }
 
