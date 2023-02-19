@@ -564,15 +564,15 @@ namespace pf {
 
         //is_rock() contains the number to which it must be replaced
         SetRandomObject(i,j,board[i][j].is_rock);
-        if (board[i][j].representation == '') {//found health
+        if (board[i][j].representation == 'h') {//found health
             std::cout << "\nAlien finds a health Pack beneath the rock\n";
         }
 
-        else if(board[i][j].representation == '') {//found health
+        else if(board[i][j].representation == 'p') {//found health
             std::cout << "\nAlien finds a pod beneath the rock\n";
         }
 
-        else if(board[i][j].representation == '') {//found health
+        else if(board[i][j].representation == 'u') {//found health
             std::cout << "\nAlien finds a Power up beneath the rock\n";
         }
 
@@ -580,11 +580,11 @@ namespace pf {
             std::cout << "\nAlien finds an arrow\n";
     }
 
-    void AlienTurnEnd(){
-        Pause();
-        ClearScreen();
-        ResetTrail();
-        ShowGameBoard();
+    void AlienTurnEnd{
+        Pause;
+        ClearScreen;
+        ResetTrail;
+        ShowGameBoard;
         Turn(0);
         alien.attack = 0;
         board[alien.row_no][alien.col_no].is_alien = true;
