@@ -102,9 +102,9 @@ namespace pf {
         Pause();
     }
     
-    Cell board = NULL;
-    Character alie;
-    Character zombies = NULL;
+    Cell **board = NULL;
+    Character alien;
+    Character *zombies = NULL;
 
     int GameOver() {
         if (alien.life <= 0)   // alien dead
