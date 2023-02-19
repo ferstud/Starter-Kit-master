@@ -543,19 +543,19 @@ namespace pf {
             std::cout << "\nAlien finds a power up\n";
             std::cout << "\nAll zombies health reduced by " <<  board[i][j].power_up << "\n";
             for(int i=0;i<zombie_count;i++){
-                zombies[].life = zombies[i].life - board[i][j].power_up;
-                if(zombies[].life <=0 ) {
+                zombies[i].life = zombies[i].life - board[i][j].power_up;
+                if(zombies[i].life <=0 ) {
                     std::cout << "\nZombie " << i << " died\n";
-                    zombies[].row_no = -1;
-                    zombies[].col_no = -1;
-                    zombies[].life = 0;
+                    zombies[i].row_no = -1;
+                    zombies[i].col_no = -1;
+                    zombies[i].life = 0;
                 }
             }
         }
 
         reset_cell(i,j);
-        board[][].is_alien = true;
-        board[][].representation = 'A';
+        board[i][j].is_alien = true;
+        board[i][j].representation = 'A';
         alien.row_no = i;
         alien.col_no = j;
     }
@@ -564,15 +564,15 @@ namespace pf {
 
         //is_rock() contains the number to which it must be replaced
         SetRandomObject(i,j,board[i][j].is_rock);
-        if (board[i][j].representation == 'h') {//found health
+        if (board[i][j].representation == '') {//found health
             std::cout << "\nAlien finds a health Pack beneath the rock\n";
         }
 
-        else if(board[i][j].representation == 'p') {//found health
+        else if(board[i][j].representation == '') {//found health
             std::cout << "\nAlien finds a pod beneath the rock\n";
         }
 
-        else if(board[i][j].representation == 'u') {//found health
+        else if(board[i][j].representation == '') {//found health
             std::cout << "\nAlien finds a Power up beneath the rock\n";
         }
 
