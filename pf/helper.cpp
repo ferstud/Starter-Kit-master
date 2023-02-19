@@ -42,7 +42,7 @@ namespace pf {
         std::cout << "Board Columns  : " << kColumns << std::endl;
         std::cout << "Zombie Count   : " << zombie_count << std::endl;
     }
-
+    
     void ChangeGameSettings() {
         int z_count;
 
@@ -101,7 +101,7 @@ namespace pf {
         std::cout << "quit\t-Quit the game\n\n";
         Pause();
     }
-
+    
     Cell **board = NULL;
     Character alien;
     Character *zombies = NULL;
@@ -113,10 +113,10 @@ namespace pf {
         for (int i = 0; i < zombie_count; i++)
             if (zombies[i].life > 0)      // zombie is still alive
                 return false;
-
+        
         return 1;        // all zombies are dead
     }
-
+    
     void DeleteGameBoard() {
         int i;
         if (board != NULL) {
@@ -127,14 +127,14 @@ namespace pf {
         if (zombies != NULL)
             delete[] zombies;
     }
-
+    
     void Caps_to_small(std::string &a) {
         for (int i = 0; i < a.size(); i++) {
             if (a[i] >= 65 && a[i] <= 90)
                 a = a[i] + 32;
         }
     }
-    
+   
         void ChangeArrow() {
         int r_no, c_no;
         std::string direction;
