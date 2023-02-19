@@ -35,7 +35,13 @@ namespace pf {
         char representation;
     };
 
-    
+    void PrintGameSettings() {
+        std::cout << "Default Game Settings";
+        std::cout << "\n--------------------\n";
+        std::cout << "Board Rows     : " << kRows << std::endl;
+        std::cout << "Board Columns  : " << kColumns << std::endl;
+        std::cout << "Zombie Count   : " << zombie_count << std::endl;
+    }
     
     void ChangeGameSettings() {
         int z_count;
