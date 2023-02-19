@@ -529,13 +529,13 @@ namespace pf {
         else if (board[i][j].representation == 'p') {//found pod
             std::cout << "\nAlien finds a pod\n";
             index = GetClosestZombie(i,j);
-            zombies[index-].life = zombies[index-1].life - board[i][j].pod;
+            zombies[index-1].life = zombies[index-1].life - board[i][j].pod;
             std::cout << "\nZombie " << index << " health reduced by " <<  board[i][j].pod << "\n";
-            if(zombies[index-].life <=0 ){
+            if(zombies[index-1].life <=0 ){
                 std::cout << "\nZombie " << index<< " died\n";
-                zombies[index-].row_no = -1;
-                zombies[index-].col_no = -1;
-                zombies[index-].life = 0;
+                zombies[index-1].row_no = -1;
+                zombies[index-1].col_no = -1;
+                zombies[index-1].life = 0;
             }
         }
 
@@ -543,19 +543,19 @@ namespace pf {
             std::cout << "\nAlien finds a power up\n";
             std::cout << "\nAll zombies health reduced by " <<  board[i][j].power_up << "\n";
             for(int i=0;i<zombie_count;i++){
-                zombies[i].life = zombies[i].life - board[i][j].power_up;
-                if(zombies[i].life <=0 ) {
+                zombies[].life = zombies[i].life - board[i][j].power_up;
+                if(zombies[].life <=0 ) {
                     std::cout << "\nZombie " << i << " died\n";
-                    zombies[i].row_no = -1;
-                    zombies[i].col_no = -1;
-                    zombies[i].life = 0;
+                    zombies[].row_no = -1;
+                    zombies[].col_no = -1;
+                    zombies[].life = 0;
                 }
             }
         }
 
         reset_cell(i,j);
-        board[i][j].is_alien = true;
-        board[i][j].representation = 'A';
+        board[][].is_alien = true;
+        board[][].representation = 'A';
         alien.row_no = i;
         alien.col_no = j;
     }
