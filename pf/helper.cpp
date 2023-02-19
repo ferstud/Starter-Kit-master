@@ -93,13 +93,13 @@ namespace pf {
         std::cout << "up\t-Alien to move up\n";
         std::cout << "down\t-Alien to move down\n";
         std::cout << "left\t-Alien to move left\n";
-        std::cout << "right\-Alien to move right\n";
-        std::cout << "arrow\-Change the direction of an arrow\n";
-        std::cout << "help\-Display these user commands\n";
-        std::cout << "save\-Save the game\n";
-        std::cout << "load\-Load a game\n";
-        std::cout << "quit\-Quit the game\n\n";
-        Pause;
+        std::cout << "right\t-Alien to move right\n";
+        std::cout << "arrow\t-Change the direction of an arrow\n";
+        std::cout << "help\t-Display these user commands\n";
+        std::cout << "save\t-Save the game\n";
+        std::cout << "load\t-Load a game\n";
+        std::cout << "quit\t-Quit the game\n\n";
+        Pause();
     }
     
     Cell **board = NULL;
