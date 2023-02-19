@@ -88,8 +88,8 @@ namespace pf {
         Pause();
     }
 
-    void Help( {
-        std::cout << "\nCommands\n";
+    void Help() {
+        std:cout << "\nCommands\n";
         std::cout << "up\t-Alien to move up\n";
         std::cout << "down\t-Alien to move down\n";
         std::cout << "left\t-Alien to move left\n";
